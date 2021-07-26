@@ -39,16 +39,21 @@
 					</header>
 
 				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Project Overview</a></li>
+						<li><a href="animod.html">Animod</a></li>
+						<li><a href="fractal.html">Fractal Generator</a></li>
+						<li><a href="character.html">Stylized Character</a></li>
+						<li><a href="scintila.html">Scintila</a></li>
+						<li><a href="audiomersion.html">Audiomersion</a></li>
+						<li><a href="foomp.html">Foomp</a></li>
+						<li><a href="noise.html">Noise Material</a></li>
+						<li><a href="subway.html">Subway Station</a></li>
+						<li><a href="tower.html">Tower</a></li>
+					</ul>
+				</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -145,46 +150,82 @@
 
 							<br>
 								<h3>Basis</h3>
-								<p>
-									<span class="image right"><img src="images/noise/basis_02_small.png" alt="" /></span>
-									<span class="image right"><img src="images/noise/basis_01_small.png" alt="" /></span>
-									The material consists of two primary elements: A swirly, irregular base and
-									pointy stones embedded in the ground.
-									<br>
-									The base is comprised of several Perlin noises, used to create some large, uneven
-									elevations, and using a Slope Blur to imprint the intricate circular patterns onto itself.
-								</p>
 
-							<br>
+								<div class="row">
+									<div class="col-8">
+										<p>
+											The material consists of two primary elements: A swirly, irregular base and
+											pointy stones embedded in the ground.
+											<br>
+											The base is comprised of several Perlin noises, used to create some large, uneven
+											elevations, and using a Slope Blur to imprint the intricate circular patterns onto itself.
+										</p>
+									</div>
+									
+									<div class="col-2">
+										<span class="image fit"><img src="images/noise/basis_02_small.png" alt="" /></span>
+									</div>
+									
+									<div class="col-2">
+										<span class="image fit"><img src="images/noise/basis_01_small.png" alt="" /></span>
+									</div>
+								</div>
+
 							<br>
 
 							<h3>Stones</h3>
-							<p>
-								<span class="image right"><img src="images/noise/stones_01_small.png" alt="" /></span>
-								<span class="image right"><img src="images/noise/stones_02_small.png" alt="" /></span>
-								The pebbles were created using a Voronoi texture and filling the cells with 
-								overlapping gradients, blended together to create the sharp ridges all around.
-								<br>
-								Additionally, a cloud noise pattern creates the fine detail on top in order for 
-								the surface to not appear too flat.
-							</p>
+							
+							<div class="row">
+								<div class="col-8">
+									<p>
+										The pebbles were created using a Voronoi texture and filling the cells with 
+										overlapping gradients, blended together to create the sharp ridges all around.
+										<br>
+										Additionally, a cloud noise pattern creates the fine detail on top in order for 
+										the surface to not appear too flat.
+									</p>
+								</div>
 
-							<br>
+								<div class="col-2">
+									<span class="image fit"><img src="images/noise/stones_01_small.png" alt="" /></span>
+								</div>
+								<div class="col-2">
+									<span class="image fit"><img src="images/noise/stones_02_small.png" alt="" /></span>
+								</div>
+							</div>
+
 							<br>
 
 							<h3>Blending</h3>
-							<p>
-								<span class="image right"><img src="images/noise/blending_01_small.png" alt="" /></span>
-								<span class="image right"><img src="images/noise/blending_02_small.png" alt="" /></span>
-								Using a Blend set to <i>Max</i> both of these elements fuse, and using a Blend set to 
-								<i>Subtract</i> allowed me to extract a mask for the stones that covers only the part 
-								sticking out of the ground to use for the coloring.
-							</p>
-	
-							<div class="row aln-bottom">
-								<div class="col-10">
+							
+							<div class="row">
+								<div class="col-8">
+									<p>
+										Using a Blend set to <i>Max</i> both of these elements fuse, and using a Blend set to 
+										<i>Subtract</i> allowed me to extract a mask for the stones that covers only the part 
+										sticking out of the ground to use for the coloring.
+									</p>
 								</div>
-								<div class="col-2"><span class="image fit"><img src="images/icons/logo_htw.jpg"alt="" /></span></div>
+
+								<div class="col-2">
+									<span class="image fit"><img src="images/noise/blending_01_small.png" alt="" /></span>
+								</div>
+								
+								<div class="col-2">
+									<span class="image fit"><img src="images/noise/blending_02_small.png" alt="" /></span>
+								</div>
+
+							</div>
+
+							<hr>
+
+							<div class="row">
+								<div class="col-9">
+								</div>
+								
+								<div class="col-3">
+									<span class="image fit"><img src="images/icons/logo_htw.jpg"alt="" /></span>
+								</div>
 							</div>
 						</div>
 					</div>
