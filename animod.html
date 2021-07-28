@@ -6,23 +6,27 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>DVE | Animod</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/splide-2.4.21/dist/css/splide.min.css">
+		<link rel="icon" href="images/icons/fractal32.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header"> 
+					<header id="header">
 						<div class="inner">
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">DAVID VIVAS ESTEVAO</span>
+									<!-- <span class="symbol"><img src="images/logo.svg" alt="" /> -->
+									</span><span class="title">David Vivas Estevao</span>
 								</a>
 
 							<!-- Nav -->
@@ -55,49 +59,185 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Animod</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+
+							<h1>ANIMOD</h1>
+
+							<div id="primary-slider" class="splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<video width=100% src="videos/animod/Animod_Motion_Construction_compressed.mp4" controls>
+										</li>
+										<li class="splide__slide">
+											<img src="images/animod/Animod_Poster_16by9.png">
+										</li>
+									</ul>
+								</div>
+							</div>
+							<br>
+							<div id="secondary-slider" class="splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<img src="images/animod/Video_thumbnail.png">
+										</li>
+										<li class="splide__slide">
+											<img src="images/animod/Animod_Poster_16by9.png">
+										</li>								
+									</ul>
+								</div>
+							</div>
+							
+							<!-- <hr> -->
+
+							<!-- <span class="image fit"><img src="images/animod/Animod_Poster_16by9.png"alt="" /></span> -->
+
+							<br>
+							
+							<div class="row">
+								<div class="col-6 col-12-medium">	
+									<h3>Abstract</h3>
+									<p>
+                                        A Modularization, Modification and Transfer system for humanoid animations via Inverse Kinematics in the Unity Engine, based on Alexander Bereznyak’s
+										and Michael Buttner’s IK Rig System System Concept.
+									</p>
+								</div>
+
+								<div class="col-6 col-12-medium">
+									<h3>Details</h4>	
+									<div class="table-wrapper">
+										<table class="alt">
+											<tbody>
+												<tr>
+													<td>Production</td>
+													<td>10/2020 - 06/2021</td>
+												</tr>
+												<tr>
+													<td>Time</td>
+													<td>8 months</td>
+												</tr>
+												<tr>
+													<td>Engine</td>
+													<td>Unity</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+
+							<br>
+
+							<h3>Description</h3>
+							<p>3D animations of humanoid characters in digital games have to satisfy
+								a great amount of requirements regarding both their visual fidelity and
+								integration into the game context. As such, authoring unique animations
+								for a large cast of characters creates an unfeasible spike in production
+								cost, regardless of whether this process involves motion capture or not.<br>
+								<br>
+								A common solution to this problem is to have these characters share the
+								same underlying skeletal structure and proportions. This ensures that
+								any animation created for one of those actors can be applied to all of
+								their rigs without needing to worry about any undesirable or implausible
+								inconsistencies in the characters’ motions.<br>
+								<br>
+								While this workflow represents a viable approach to the animation
+								process in the context of large productions, it inevitably causes a lack of
+								individuality regarding characters’ body types, as well as a discrepancy
+								between their unique personalities and styles of motion.
+								Animation Retargeting can alleviate some of these concerns by
+								transferring motion from one humanoid rig to other differently
+								proportioned ones. However, because it basically just copies motions
+								executed by one rig to another, it does not account for any kinds of
+								differences in the style of the motion itself.<br>
+								<br>
+								By utilizing Inverse Kinematics and other animation constraints, Animod
+								aims to provide a procedural animation approach that is capable of both
+								retargeting and runtime modification of humanoid animations in the Unity
+								Game Engine, based on the IK Rig System concept pioneered by
+								Alexander Bereznyak and Michael Buttner.
+								<!-- <video width=100% src="videos/audiomersion/gameplay.mp4" controls> -->
+							</p>
+
+							<br>
+
+							<h3>Animation Modularization and Transfer</h3>
+								<span class="image fit"><img src="images/animod/Rig Modularization.png"alt="" /></span>
+
+								<p>
+									Animod is capable of unbinding the motion defined in an Animation Clip from the
+									Bone Rig Structure that the Clip requires to animate properly.
+									This motion is stored as a new Animation Clip containing collections of
+									parameters which pertain to certain parts of the Bone Rig, i.e. there is
+									one set of parameters for each leg, one for the spine, one for each arm, etc.<br>
+									<br>
+									Using a proper setup of Animod's Motion Constraints and the Animation post-processing
+									capabilities of Unity's Animation Rigging package, it is possible to apply the
+									extracted motion to Bone Rigs of differing structure.<br>
+									<br>
+									The actual bone animation is handled by IK Solver Constraints, which use target
+									Transforms set by the Motion Constraints to accomodate bone chains of desired link lengths.
+								</p>
+
+								<span class="image fit"><img src="images/animod/Motion Mapping.png"alt="" /></span>
+
+							<br>
+
+							<h3>Animation Modification</h3>
+							<div class="row">
+								<div class="col-6">
+									<p>
+										The data stored in Motion Clips can be processed by Animod
+										Modification Constraints before the motion is applied to the Bone Rig.
+										This functionality can be used to infuse the resulting Animation with
+										character-specific nuances or to yield entirely new poses without the need for additional
+										Animation Clips.<br>
+										<br>
+										The Modification process is non-destructive and can be used to author new Animations
+										within the Game Engine as well as modify Animations during runtime in order to dynamically
+										adapt them to gameplay needs.
+									</p>
+								</div>
+								<div class="col-6">
+									<span class="image fit"><img src="images/animod/ModConstraints.png"alt="" /></span>
+								</div>
+							</div>
+
+							<br>
+
+							<div class="row">
+								<div class="col-6">
+									<h3>Learnings</h3>
+									<ul>
+									<li>Coding Rigging Constraints with C# Jobs</li>
+									<li>IK Solver Coding</li>
+									<li>Unity Editor Scripting</li>
+									<li>Working with Unity Avatars and Retargeting</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<h3>Credits</h3>
+									<p>Special Thanks to my coach in this endeavor<br>
+										Prof. Jan Berger
+								</div>
+							</div>
+						
+							<div class="row aln-bottom">
+								<div class="col-6">
+
+									</p>
+								</div>
+
+								<div class="col-2"><span class="image fit"><img src="images/icons/logo_gd.png"alt="" /></span></div>
+								<div class="col-2"><span class="image fit"><img src="images/icons/logo_dehive.png"alt="" /></span></div>
+								<div class="col-2"><span class="image fit"><img src="images/icons/logo_htw.jpg"alt="" /></span></div>
+							</div>
 						</div>
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
 							<ul class="copyright">
 								<li>&copy; David Vivas Estevao 2021</li>
 								<li>Design by HTML5 UP</a></li>
@@ -113,6 +253,49 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/splide-2.4.21/dist/js/splide.min.js"></script>
+			<script src="assets/splide-2.4.21/dist/css/splide.min.css"></script>
+
+			<script>
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var secondarySlider = new Splide( '#secondary-slider', {
+						rewind: true,
+						fixedWidth: 193.5,
+						height    : 120,
+						gap	      : 10,
+						cover     : true,
+						isNavigation: true,
+						pagination: false,
+						focus	  : 'center',
+						arrows	  : false,
+						waitForTransition: false,
+						perPage	  : 3,
+						drag	  : false,
+						updateOnMove: true,
+						slideFocus: false,
+						trimSpace : true,
+						breakpoints: {
+							'600': {
+								fixedWidth: 66,
+								height	  : 40,
+							}
+						}
+					} ).mount();
+
+					var primarySlider = new Splide( '#primary-slider', {
+						type       : 'fade',
+						rewind	   : true,
+						heightRatio: 0.5625,
+						pagination : false,
+						cover      : true,
+						pagination : true,
+						drag	   : false,
+						arrows	   : true,
+					} ); // do not call mount() here.
+	
+					primarySlider.sync( secondarySlider ).mount();
+				} );
+			</script>
 
 	</body>
 </html>
